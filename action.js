@@ -38,6 +38,8 @@ module.exports = class {
         if (foundIssue) return foundIssue
       }
     }
+
+    return
   }
 
   async findIssueKeyIn (searchStr) {
