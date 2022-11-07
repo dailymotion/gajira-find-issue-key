@@ -17,7 +17,7 @@ async function exec () {
       argv: parseArgs(),
       config,
     }).execute()
-
+    console.log(result);
     if (result) {
       console.log(`Detected issueKey: ${result.issue}`)
       console.log(`Saving ${result.issue} to ${cliConfigPath}`)
