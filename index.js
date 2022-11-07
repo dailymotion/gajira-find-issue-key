@@ -36,7 +36,7 @@ async function exec () {
 
     console.log('No issue keys found.')
   } catch (error) {
-    console.trace();
+    console.log(error.stack);
     core.setFailed(error.toString())
   }
 }
